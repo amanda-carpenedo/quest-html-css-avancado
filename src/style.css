@@ -1,0 +1,123 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "image info"
+        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 11px;
+    background: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #6c4cb7;
+    max-width: 1800px;
+    height: 100vh;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    padding: 30px 50px;
+}
+
+.header .header-container .logo {
+    width: 230px;
+}
+
+
+/* IMAGE */
+.image {
+    grid-area: image;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1920px;
+
+}
+
+.image-container img {
+    padding-left: 50px;
+    width: 100%;
+
+}
+
+
+
+/* INFO */
+.info {
+    grid-area: info;
+}
+
+.info .info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 80px 0 40px;
+}
+
+.info .info-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+
+.info .info-container p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+
+.info .info-container .button {
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    color: #6c4cb7;
+    border-radius: 30px;
+    box-shadow: 3px 4px 10px rgb(0, 0, 0, 0.35);
+
+}
+
+.info .info-container .button:hover {
+    background-color: rgb(247, 148, 222);
+    color: white;
+}
+
+
+.info .info-container .button a {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: end;
+    margin-right: 70px;
+}
+
+.footer .social i {
+    font-size: 40px;
+    color: white;
+}
+
+.footer .social i:hover {
+    color: rgb(247, 148, 222);
+}
+
+.footer .social a {
+    margin: 10px;
+}
